@@ -76,66 +76,84 @@ img {
 
 /* \\\\\\\\\\\\\\\ MEDIA SCREENS \\\\\\\\\\\\\\\ */
 
-@media screen and (max-width:420px){
-  body{
-    background-color: #f1eed5;
-  }
 
-  #steps .row{
-    background-color:white;
-  }
-  
-  #lezioni .row>.left,
-  #lezioni .row>.right {
-    width: 100%; 
-  }
 
-  #steps .row>.left,
-  #steps .row>.central,
-  #steps .row>.right {
-  width: 100%;
-  }
-
-  #why .row>.first,
-  #why .row>.second,
-  #why .row>.third {
-  width: 100%;
-  margin-top: 80px;
-  border-bottom: 1px solid black;
-  }  
-}
+  /* TABLET */
 
 @media screen and (max-width:768px){
   body{
     background-color: white;
   }
 
-  /* #steps .row>.left,
-  #steps .row>.central,
-  #steps .row>.right {
-  width: 100%;
-  background-color: #f1eed5;
-  } */
-
   #steps .row{
     background-color:#f1eed5;
   }
 
 
-#steps .row>.left,
-#steps .row>.central,
-#steps .row>.right {
-  float: left;
-  width: 50%;
+  #steps .row>.left,
+  #steps .row>.central{
+    float: left;
+    width: 50%;
+  }
+
+  #steps .row>.right{
+    width:100%;
+    margin:auto;
+  }
+
+  #steps .row>.central{
+    text-align: center;
+    display: block;
+  } 
+
+  #why .row>.first, #why .row>.second{
+    width: 49%;
+    margin: 40px 0;
+    float:left;
+  }
+
+  hr{
+    display: none;
+  }
 }
 
-#steps .row>.right{
-  width:100%;
-  margin:auto;
-}
+  /* CELLULARE */
+  @media screen and (max-width:420px){
+    .row {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 100px;
+    }
 
-#steps .row>.central{
-  text-align: center;
-  display: block;
-}
-}
+    /* body{
+      background-color: #f1eed5;
+    } */
+  
+    #steps .row{
+      background-color: white;
+    }
+    #lezioni, #why{
+      background-color:#f1eed5;
+    }
+
+    #lezioni .row>.left,
+    #lezioni .row>.right {
+      width: 100%; 
+    }
+  
+    #steps .row>.left,
+    #steps .row>.central,
+    #steps .row>.right {
+    width: 100%;
+    }
+  
+    #why .row>.first,
+    #why .row>.second,
+    #why .row>.third {
+    width: 100%;
+    margin-top: 80px;
+    border-bottom: 1px solid black;
+    }  
+  
+  }
