@@ -76,15 +76,22 @@ img {
 
 /* \\\\\\\\\\\\\\\ MEDIA SCREENS \\\\\\\\\\\\\\\ */
 
+
 @media screen and (max-width:420px){
-  body{
-    background-color: #f1eed5;
+  .row {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:0;
   }
 
   #steps .row{
-    background-color:white;
+    background-color: white;
   }
-  
+  #lezioni, #why{
+    background-color:#f1eed5;
+  }
+
   #lezioni .row>.left,
   #lezioni .row>.right {
     width: 100%; 
@@ -103,4 +110,5 @@ img {
   margin-top: 80px;
   border-bottom: 1px solid black;
   }  
+
 }
